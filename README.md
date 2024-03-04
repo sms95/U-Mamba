@@ -9,9 +9,15 @@ Requirements: `Ubuntu 20.04`, `CUDA 11.7`
 
 1. Create a virtual environment: `conda create -n umamba python=3.10 -y` and `conda activate umamba `
 2. Install [Pytorch](https://pytorch.org/get-started/previous-versions/#linux-and-windows-4) 2.0.1: `pip install torch==2.0.1 torchvision==0.15.2`
-3. Install [Mamba](https://github.com/state-spaces/mamba): `pip install causal-conv1d==1.1.1` and `pip install mamba-ssm`
+3. Install [Mamba](https://github.com/state-spaces/mamba): `pip install causal-conv1d` and `pip install mamba-ssm`
 4. Download code: `git clone https://github.com/bowang-lab/U-Mamba`
 5. `cd U-Mamba/umamba` and run `pip install -e .`
+6. Others dependencies:
+    ```bash
+    pip install --upgrade git+https://github.com/FabianIsensee/hiddenlayer.git@more_plotted_details #egg=hiddenlayer
+    pip install ipython
+    ```
+
 
 
 sanity test: Enter python command-line interface and run
